@@ -10,20 +10,22 @@
                             </ol>
                         </nav>
                     <div class="row">
-                        <div class="col-2">
+                        <div class="col-6">
                             <h5 class="titulo-h5 fw-bold mb-3">{{ $empresa->t_nombre }}</h5>
                             <img class="mb-1" src="{{ asset($empresa->t_img_logo) }}" alt="logo-empresa"
                                 style="width: 150px; border-radius: 10px">
                             <p><?php echo $empresa->t_eslogan; ?></p>
                             
                         </div>
-                        <div class="col-2">
+                        <div class="col-6">
                             <p><strong>Información</strong></p>
                             <p><strong>Telefono:</strong> {{ $empresa->t_telefono }}</p>
                             <p><strong>Correo electronico:</strong> {{ $empresa->t_correo }}</p>
                             <a href="{{ $empresa->t_enlace }}" target="_blank">Sitio web <span class="badge text-bg-primary">{{ $productos->count() }} resultados</span></a> <br>
                         </div>
-                        <div class="col-8">
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
                             <p><strong>Descripción</strong></p>
                             <p><?php echo $empresa->t_descripcion; ?></p>
                         </div>
