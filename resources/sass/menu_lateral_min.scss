@@ -1,0 +1,104 @@
+.content-menu-lateral-min {
+    width: 25%;
+    height: calc(100vh - 98px);
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    position: fixed;
+    overflow-y: scroll;
+
+    .menu-lateral-min {
+        width: 100%;
+        height: 70%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        a {
+            width: 100% !important;
+            text-decoration: none;
+            color: #000;
+            border-radius: 5px;
+            margin-top: 13px;
+            padding: 10px 10px;
+            font-weight: 500;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #E2E2E2;
+            }
+        }
+    }
+}
+
+.btn-movil-menu {
+    display: none;
+}
+
+.color {
+    color: #072B5B;
+}
+
+.menu-bottom {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .content-menu-lateral-min {
+        display: none;
+    }
+
+    #menu-movil {
+        position: relative;
+        margin-top: 80px;
+    }
+
+    .contenido-tres {
+        margin-top: 0px
+    }
+
+    .contenido-nueve {
+        margin-top: 0px;
+    }
+
+    .btn-movil-menu {
+        width: 100%;
+        height: 80px;
+        display: block;
+        position: relative;
+        top: 75px;
+
+        .content {
+            width: 100%;
+            height: 80px;
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .menu-bottom {
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        height: 45px !important;
+        display: block;
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid #efefef;
+        .content {
+            width: 100%;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+            .img-filter{
+                width: 25px;
+                height: 25px;
+                object-fit: cover;
+                align-items: center;
+            }
+        }
+    }
+}
