@@ -8,7 +8,7 @@
                                 <li class="breadcrumb-item"><a href="{{ URL::to('/tienda') }}">Tiendas</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">{{ $empresa->t_nombre }}</li>
                             </ol>
-                        </nav>
+                        </nav> 
                     <div class="row">
                         <div class="col-6">
                             <h5 class="titulo-h5 fw-bold mb-3">{{ $empresa->t_nombre }}</h5>
